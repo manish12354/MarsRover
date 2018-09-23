@@ -1,6 +1,7 @@
 .gradle/
 .idea/
 out/
+build/test-results/test/binary/output.bin.idx
 jenkinsfile/
 marsRover/build/
 build/*
