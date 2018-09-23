@@ -13,12 +13,16 @@ repositories {
 jar {
     manifest {
         attributes 'Implementation-Title': 'marsRover',
-                   'Main-Class': 'Main.java'
+                   'Main-Class': 'com.tw.marsRover.Main'
 //                   'Main-Class': 'AreaCalculator'
     }
     baseName = project.name
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
+
+//task hello {
+//    println "i did something new"
+//}
 
 dependencies {
     testCompile "org.mockito:mockito-core:2.+"
